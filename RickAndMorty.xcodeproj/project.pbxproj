@@ -15,6 +15,14 @@
 		A65228AC252370800028FE03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65228AA252370800028FE03 /* LaunchScreen.storyboard */; };
 		A65228B7252370800028FE03 /* RickAndMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228B6252370800028FE03 /* RickAndMortyTests.swift */; };
 		A65228C2252370800028FE03 /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228C1252370800028FE03 /* RickAndMortyUITests.swift */; };
+		A65228D8252370F40028FE03 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D2252370F40028FE03 /* HomePresenter.swift */; };
+		A65228D9252370F40028FE03 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D3252370F40028FE03 /* HomeWorker.swift */; };
+		A65228DA252370F40028FE03 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D4252370F40028FE03 /* HomeRouter.swift */; };
+		A65228DB252370F40028FE03 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D5252370F40028FE03 /* HomeModels.swift */; };
+		A65228DC252370F40028FE03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D6252370F40028FE03 /* HomeViewController.swift */; };
+		A65228DD252370F40028FE03 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228D7252370F40028FE03 /* HomeInteractor.swift */; };
+		A65228E62523726E0028FE03 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228E52523726E0028FE03 /* Constants.swift */; };
+		A65228EB25237FAB0028FE03 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65228EA25237FAB0028FE03 /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		A65228BD252370800028FE03 /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65228C1252370800028FE03 /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		A65228C3252370800028FE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65228D2252370F40028FE03 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		A65228D3252370F40028FE03 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		A65228D4252370F40028FE03 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		A65228D5252370F40028FE03 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		A65228D6252370F40028FE03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A65228D7252370F40028FE03 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		A65228E52523726E0028FE03 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A65228EA25237FAB0028FE03 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,8 @@
 				A652289F2523707F0028FE03 /* AppDelegate.swift */,
 				A65228A12523707F0028FE03 /* SceneDelegate.swift */,
 				A65228A32523707F0028FE03 /* ViewController.swift */,
+				A65228E52523726E0028FE03 /* Constants.swift */,
+				A65228E1252370FD0028FE03 /* Home Scene */,
 				A65228A52523707F0028FE03 /* Main.storyboard */,
 				A65228A8252370800028FE03 /* Assets.xcassets */,
 				A65228AA252370800028FE03 /* LaunchScreen.storyboard */,
@@ -126,6 +144,20 @@
 				A65228C3252370800028FE03 /* Info.plist */,
 			);
 			path = RickAndMortyUITests;
+			sourceTree = "<group>";
+		};
+		A65228E1252370FD0028FE03 /* Home Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A65228D2252370F40028FE03 /* HomePresenter.swift */,
+				A65228D3252370F40028FE03 /* HomeWorker.swift */,
+				A65228D4252370F40028FE03 /* HomeRouter.swift */,
+				A65228D5252370F40028FE03 /* HomeModels.swift */,
+				A65228D6252370F40028FE03 /* HomeViewController.swift */,
+				A65228D7252370F40028FE03 /* HomeInteractor.swift */,
+				A65228EA25237FAB0028FE03 /* CharacterCell.swift */,
+			);
+			path = "Home Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65228A42523707F0028FE03 /* ViewController.swift in Sources */,
+				A65228DA252370F40028FE03 /* HomeRouter.swift in Sources */,
 				A65228A02523707F0028FE03 /* AppDelegate.swift in Sources */,
+				A65228EB25237FAB0028FE03 /* CharacterCell.swift in Sources */,
+				A65228DC252370F40028FE03 /* HomeViewController.swift in Sources */,
 				A65228A22523707F0028FE03 /* SceneDelegate.swift in Sources */,
+				A65228E62523726E0028FE03 /* Constants.swift in Sources */,
+				A65228D9252370F40028FE03 /* HomeWorker.swift in Sources */,
+				A65228DD252370F40028FE03 /* HomeInteractor.swift in Sources */,
+				A65228D8252370F40028FE03 /* HomePresenter.swift in Sources */,
+				A65228DB252370F40028FE03 /* HomeModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
